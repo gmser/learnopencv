@@ -1,4 +1,4 @@
-使用一下中文
+
 #include <opencv2/opencv.hpp>
 
 using namespace cv;
