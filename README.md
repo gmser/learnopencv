@@ -1,2 +1,2 @@
 # learnopencv
-学习opencv相关笔记
+学习opencv的笔记
