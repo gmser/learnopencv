@@ -48,6 +48,6 @@ git status
 ### 换行
 中间空一行
 
-ont line
+one line
 
 another line
