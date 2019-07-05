@@ -26,9 +26,31 @@
 > pardon my French
 
 ### 引用代码
-`code is here`
 ```
-git status
+void dijkstra_heap(){
+	priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> heap;
+	for (int i = 1; i <= n; i++) dist[i] = INF;
+	dist[1] = 0;
+	heap.push(make_pair(dist[1], 1));
+}
+```
+
+```
+void dijkstra(){
+	for (int i = 1; i <= n; i++) dist[i] = INF;
+	dist[1] = 0;
+
+	for (int i = 0; i < n; i++){
+		int id, mind = INF;
+		for (int j = 1;j <= n;j++)
+			if (!st[j] && dist[j] < mind){
+				mind = dist[j];
+				id = j;
+			}
+		st[id] = 1;
+		for (int j = 1; j <= n; j++) dist[j] = min(dist[j], dist[id] + g[id][j]);
+	}	
+}
 ```
 
 ### 链接
